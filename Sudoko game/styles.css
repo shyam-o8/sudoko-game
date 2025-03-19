@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to right, #00c6ff, #0072ff); /* Attractive gradient background */
+}
+
+
+
+h1 {
+    margin-bottom: 20px;
+    color: #fff; /* Change color for better visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+h2 {
+    color: #fff; /* Change color for better visibility */
+    font-size: 1.5em; /* Increase font size */
+    margin-top: 10px; /* Add some space above */
+}
+
+
+#sudoku-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    grid-template-rows: repeat(9, 40px);
+    gap: 1px;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    transition: transform 0.2s, border-color 0.2s; /* Animation for scaling and border color */
+}
+
+.cell:focus {
+    transform: scale(1.1); /* Scale effect on focus */
+    border-color: #007bff; /* Change border color on focus */
+}
+
+
+#solve-button {
+    padding: 15px 30px; /* Increase padding for a bigger button */
+    font-size: 18px; /* Increase font size */
+    background-color: #007bff; /* Change background color */
+    color: white; /* Change text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    margin-top: 20px; /* Move the button down */
+    transition: background-color 0.3s; /* Add transition for hover effect */
+}
+
+#solve-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
